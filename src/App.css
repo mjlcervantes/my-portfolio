@@ -1,7 +1,4 @@
-/* Tailwind directives are now handled by the build process */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* Custom styles without Tailwind */
 
 /* Custom scrollbar */
 ::-webkit-scrollbar {
