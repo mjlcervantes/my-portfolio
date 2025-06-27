@@ -160,7 +160,7 @@ const Portfolio = () => {
             Jasper Lemuel Cervantes
           </h1>
           
-          <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed text-center">
             Computer Engineering Student | Clock Enthusiast | Problem Solver
           </p>
           
@@ -491,7 +491,7 @@ const Portfolio = () => {
             <div className="text-3xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent mb-4">
               Jasper Lemuel Cervantes
             </div>
-            <p className="text-gray-400 mb-6">
+            <p className="text-gray-400 mb-6 text-center">
               Computer Engineering Student | Clock Enthusiast | Problem Solver
             </p>
             <div className="flex justify-center space-x-6">
