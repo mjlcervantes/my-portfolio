@@ -26,18 +26,18 @@ const Portfolio = () => {
 
   const skills = {
     technical: [
-      { name: 'C++', level: 85, icon: '💻' },
-      { name: 'Python', level: 80, icon: '🐍' },
-      { name: 'HTML/CSS', level: 90, icon: '🌐' },
-      { name: 'React.js', level: 75, icon: '⚛️' },
-      { name: 'VS Code', level: 95, icon: '🔧' }
+      { name: 'C++', level: 70, icon: '💻' },
+      { name: 'Python', level: 75, icon: '🐍' },
+      { name: 'HTML/CSS', level: 60, icon: '🌐' },
+      { name: 'React.js', level: 60, icon: '⚛️' },
+      { name: 'VS Code', level: 70, icon: '🔧' }
     ],
     nonTechnical: [
       { name: 'Motorcycle Mechanics', level: 90, icon: '🏍️' },
       { name: 'Microsoft Office', level: 85, icon: '📊' },
       { name: 'Research Skills', level: 80, icon: '🔍' },
-      { name: 'Video Editing (CapCut)', level: 75, icon: '🎬' },
-      { name: 'IP & Patent Search', level: 70, icon: '📋' }
+      { name: 'Video Editing (CapCut)', level: 70, icon: '🎬' },
+      { name: 'IP & Patent Search', level: 50, icon: '📋' }
     ]
   };
 
@@ -131,7 +131,7 @@ const Portfolio = () => {
                 <button
                   key={item.id}
                   onClick={() => scrollToSection(item.id)}
-                  className="flex items-center space-x-3 w-full px-3 py-2 rounded-lg text-left hover:bg-slate-700 transition-colors"
+                  className="flex items-center justify-center space-x-3 w-full px-3 py-2 rounded-lg text-center hover:bg-slate-700 transition-colors"
                 >
                   <item.icon size={18} />
                   <span>{item.label}</span>
@@ -161,7 +161,7 @@ const Portfolio = () => {
           </h1>
           
           <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
-            Computer Engineering Student | Network Specialist | Problem Solver
+            Computer Engineering Student | Clock Enthusiast | Problem Solver
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -236,11 +236,11 @@ const Portfolio = () => {
           
           <div className="space-y-6">
             <div className="bg-slate-800 rounded-xl p-6 border border-slate-700 hover:border-blue-500 transition-colors">
-              <div className="flex items-start space-x-4">
-                <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center flex-shrink-0">
+              <div className="flex flex-col items-center text-center">
+                <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center mb-4">
                   <GraduationCap size={24} />
                 </div>
-                <div className="flex-1">
+                <div>
                   <h3 className="text-xl font-semibold text-white mb-2">College (Institute)</h3>
                   <p className="text-blue-400 font-medium mb-1">Technological Institute of the Philippines</p>
                   <p className="text-gray-400">Computer Engineering</p>
@@ -249,11 +249,11 @@ const Portfolio = () => {
             </div>
             
             <div className="bg-slate-800 rounded-xl p-6 border border-slate-700 hover:border-blue-500 transition-colors">
-              <div className="flex items-start space-x-4">
-                <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
+              <div className="flex flex-col items-center text-center">
+                <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-blue-600 rounded-lg flex items-center justify-center mb-4">
                   <BookOpen size={24} />
                 </div>
-                <div className="flex-1">
+                <div>
                   <h3 className="text-xl font-semibold text-white mb-2">High School (Private)</h3>
                   <p className="text-green-400 font-medium mb-1">St. John the Baptist Academy</p>
                   <p className="text-gray-400">Secondary Education</p>
@@ -262,11 +262,11 @@ const Portfolio = () => {
             </div>
             
             <div className="bg-slate-800 rounded-xl p-6 border border-slate-700 hover:border-blue-500 transition-colors">
-              <div className="flex items-start space-x-4">
-                <div className="w-12 h-12 bg-gradient-to-br from-yellow-500 to-orange-600 rounded-lg flex items-center justify-center flex-shrink-0">
+              <div className="flex flex-col items-center text-center">
+                <div className="w-12 h-12 bg-gradient-to-br from-yellow-500 to-orange-600 rounded-lg flex items-center justify-center mb-4">
                   <BookOpen size={24} />
                 </div>
-                <div className="flex-1">
+                <div>
                   <h3 className="text-xl font-semibold text-white mb-2">High School (Public)</h3>
                   <p className="text-yellow-400 font-medium mb-1">Lakan Dula High School</p>
                   <p className="text-gray-400">Secondary Education</p>
@@ -350,23 +350,23 @@ const Portfolio = () => {
           <div className="space-y-8">
             {/* Experiences */}
             <div className="mb-12">
-              <h3 className="text-2xl font-bold mb-6 text-blue-400">Extra Co-curricular Works</h3>
+              <h3 className="text-2xl font-bold mb-6 text-blue-400 text-center">Extra Co-curricular Works</h3>
               <div className="space-y-6">
                 {experiences.map((exp, index) => (
                   <div key={index} className="bg-slate-800 rounded-xl p-6 border border-slate-700 hover:border-blue-500 transition-colors">
                     <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
-                      <h4 className="text-xl font-semibold text-white">{exp.title}</h4>
-                      <div className="flex items-center space-x-2 text-blue-400">
+                      <h4 className="text-xl font-semibold text-white text-center md:text-left">{exp.title}</h4>
+                      <div className="flex items-center justify-center md:justify-start space-x-2 text-blue-400">
                         <Calendar size={16} />
                         <span className="text-sm">{exp.period}</span>
                       </div>
                     </div>
-                    <div className="mb-3">
+                    <div className="mb-3 text-center md:text-left">
                       <span className="inline-block px-3 py-1 bg-blue-600 text-white text-sm rounded-full">
                         {exp.type}
                       </span>
                     </div>
-                    <p className="text-gray-300">{exp.description}</p>
+                    <p className="text-gray-300 text-center md:text-left">{exp.description}</p>
                   </div>
                 ))}
               </div>
@@ -374,12 +374,12 @@ const Portfolio = () => {
 
             {/* Seminars */}
             <div>
-              <h3 className="text-2xl font-bold mb-6 text-purple-400">Seminars & Trainings</h3>
+              <h3 className="text-2xl font-bold mb-6 text-purple-400 text-center">Seminars & Trainings</h3>
               <div className="grid md:grid-cols-2 gap-6">
                 {seminars.map((seminar, index) => (
                   <div key={index} className="bg-slate-800 rounded-xl p-6 border border-slate-700 hover:border-purple-500 transition-colors">
-                    <h4 className="text-lg font-semibold text-white mb-3">{seminar.title}</h4>
-                    <div className="flex items-center space-x-4 text-gray-400 text-sm">
+                    <h4 className="text-lg font-semibold text-white mb-3 text-center">{seminar.title}</h4>
+                    <div className="flex items-center justify-center space-x-4 text-gray-400 text-sm">
                       <div className="flex items-center space-x-1">
                         <Calendar size={14} />
                         <span>{seminar.date}</span>
@@ -409,14 +409,14 @@ const Portfolio = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {certificates.map((cert, index) => (
               <div key={index} className="bg-slate-800 rounded-xl p-6 border border-slate-700 hover:border-yellow-500 transition-all duration-300 hover:scale-105">
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-gradient-to-br from-yellow-500 to-orange-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                <div className="flex flex-col items-center text-center">
+                  <div className="w-12 h-12 bg-gradient-to-br from-yellow-500 to-orange-600 rounded-lg flex items-center justify-center mb-4">
                     <Award size={24} />
                   </div>
-                  <div className="flex-1">
+                  <div>
                     <h4 className="text-lg font-semibold text-white mb-2">{cert.name}</h4>
                     <p className="text-yellow-400 font-medium mb-1">{cert.issuer}</p>
-                    <div className="flex items-center space-x-1 text-gray-400 text-sm">
+                    <div className="flex items-center justify-center space-x-1 text-gray-400 text-sm">
                       <Calendar size={14} />
                       <span>{cert.date}</span>
                     </div>
@@ -454,14 +454,14 @@ const Portfolio = () => {
                 <div className="w-20 h-20 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full mx-auto mb-4 flex items-center justify-center">
                   <Mail size={32} />
                 </div>
-                <h3 className="text-2xl font-bold text-white mb-2">Let's Connect</h3>
+                <h3 className="text-2xl font-bold text-white mb-2 text-center">Let's Connect</h3>
                 <p className="text-gray-400">Feel free to reach out for any inquiries or opportunities</p>
               </div>
               
               <div className="space-y-6">
                 <div className="flex items-center justify-center space-x-4 p-4 bg-slate-700 rounded-lg">
                   <Mail className="text-blue-400" size={24} />
-                  <div>
+                  <div className="text-center">
                     <p className="text-gray-400 text-sm">Email</p>
                     <a href="mailto:mjlcervantes@tip.edu.ph" className="text-white font-semibold hover:text-blue-400 transition-colors">
                       mjlcervantes@tip.edu.ph
