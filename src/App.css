@@ -1,5 +1,67 @@
 /* Custom styles without Tailwind */
 
+/* Base styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: #0f172a !important; /* slate-900 */
+  color: #f8fafc !important; /* slate-50 */
+}
+
+/* Layout */
+.min-h-screen {
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Text styles */
+.text-white {
+  color: #ffffff !important;
+}
+
+.text-gradient {
+  background: linear-gradient(to right, #60a5fa, #a855f7);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Background styles */
+.bg-slate-900 {
+  background-color: #0f172a !important;
+}
+
+.bg-slate-800 {
+  background-color: #1e293b !important;
+}
+
+.bg-blue-600 {
+  background-color: #2563eb !important;
+}
+
+.bg-purple-600 {
+  background-color: #9333ea !important;
+}
+
+.bg-gradient-blue-purple {
+  background: linear-gradient(to right, #2563eb, #9333ea) !important;
+}
+
+/* Section styles */
+section {
+  padding: 5rem 0;
+}
+
+.section-dark {
+  background-color: #1e293b;
+}
+
 /* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
@@ -21,4 +83,63 @@
 /* Smooth scrolling */
 html {
   scroll-behavior: smooth;
+}
+
+/* Navigation */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 50;
+  transition: all 0.3s;
+  background-color: rgba(15, 23, 42, 0.9) !important;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-primary {
+  background: linear-gradient(to right, #2563eb, #9333ea);
+  color: white;
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+  transform: scale(1.05);
+}
+
+.btn-outline {
+  border: 2px solid #3b82f6;
+  color: white;
+}
+
+.btn-outline:hover {
+  background-color: #3b82f6;
+}
+
+/* Cards */
+.card {
+  background-color: #1e293b;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  border: 1px solid #334155;
+  transition: all 0.3s;
+}
+
+.card:hover {
+  border-color: #3b82f6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hide-mobile {
+    display: none;
+  }
 }
