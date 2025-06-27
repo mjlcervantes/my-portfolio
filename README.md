@@ -21,7 +21,7 @@ This is my personal portfolio website showcasing my skills, education, experienc
 1. Clone this repository
 2. Install dependencies with `npm install`
 3. Start the development server with `npm start`
-4. Open [http://localhost:3000](http://localhost:3000) to view it in your browser
+4. Open [http://localhost:3000](http://192.168.56.1:3000/my-portfolio) to view it in your browser
 
 ## Deployment
 
